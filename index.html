@@ -34,24 +34,23 @@
       </div>
 
       <ul class="navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="cfus.html">CFUs</a></li>
-        <li><a href="labs.html">Labs</a></li>
-        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cfus">CFUs</a></li>
+        <li><a href="#contact">Contacts</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="home-card">
+  <main class="home-card" id="home">
 
     <!-- ABOUT / BIO CARD -->
     <section class="resource-card">
       <div class="bio">
         <div class="bio-pic">
           <!-- Replace profile.jpg with your own image file -->
-          <img src="profile.jpg" alt="Your Photo" />
+          <img src="IMG_4183.jpeg" alt="Your Photo" />
         </div>
 
         <div class="bio-text">
@@ -94,7 +93,7 @@
     </section>
 
     <!-- PROJECTS SECTION (repeatable blocks) -->
-    <section class="resource-card">
+    <section class="resource-card" id="projects">
       <h2>Featured Projects</h2>
       <p>Each project includes an embed and a reflection from your Curator Guide.</p>
     </section>
@@ -164,6 +163,29 @@
   </main>
 
   <!-- FOOTER -->
+  <section class="resource-card" id="cfus">
+    <h2>CFUs (Checks For Understanding)</h2>
+    <p>Use this area to add short CFU entries or reflections. Example structure:</p>
+    <ol>
+      <li><strong>Title:</strong> Brief description or question you addressed — <em>Date</em></li>
+      <li><strong>What I learned:</strong> A one- or two-sentence takeaway.</li>
+      <li><strong>Link / Artifact:</strong> Add a link or reference to the work.</li>
+    </ol>
+    <p>Add more CFUs by copying the list items above or replace this block with your own content.</p>
+  </section>
+
+  <section class="resource-card" id="contact">
+    <h2>Contact</h2>
+    <p>Please add your preferred contact details below.</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:ivani6@nycstudents.net">ivani6@nycstudents.net</a></li>
+      <li><strong>Phone:</strong> (add phone number)</li>
+      <li><strong>Location:</strong> (your city / state)</li>
+      <li><strong>LinkedIn / GitHub / Portfolio:</strong> Add links here</li>
+    </ul>
+    <p>If you want a contact form here instead, I can add a simple HTML form.</p>
+  </section>
+
   <footer class="resource-card">
     <p>© <span id="year"></span> Ivan | Junior Fall Portfolio</p>
   </footer>

@@ -5,11 +5,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #0b0c1a;
-  color: #f0f0f0;
+  color: #e9dfe8;
+  background-color: #120012;
   background-image: url("starry_sun.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -20,7 +26,7 @@ body {
    NAVBAR
 ========================= */
 .navbar {
-  background-color: #1b1d3a;
+  background-color: #3b003b;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -40,13 +46,12 @@ body {
 }
 
 .navbar-right a {
-  color: white;
+  color: #e9dfe8;
   text-decoration: none;
   font-weight: bold;
 }
-
 .navbar-right a:hover {
-  color: #aaaaff;
+  color: #ff66b2;
 }
 
 /* =========================
@@ -62,11 +67,11 @@ body {
    CARDS
 ========================= */
 .resource-card {
-  background-color: rgba(28, 31, 47, 0.95);
+  background-color: rgba(40, 8, 40, 0.95);
   margin: 2em auto;
   padding: 1.5em;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 20px rgba(138, 0, 51, 0.15);
 }
 
 /* =========================
@@ -83,7 +88,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #5555aa;
+  border: 3px solid #d94a7b;
   object-fit: cover;
 }
 
@@ -94,7 +99,7 @@ body {
 .bio-text h4 {
   margin-top: 0;
   font-weight: normal;
-  color: #ccccff;
+  color: #e7d7f0;
 }
 
 /* =========================
@@ -111,25 +116,25 @@ body {
   min-width: 320px;
   height: 450px;
   border: none;
-  background-color: white;
+  background-color: #1a001a;
   border-radius: 8px;
 }
 
 .reflection {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(230, 220, 235, 0.03);
   padding: 1em;
   border-radius: 8px;
 }
 
 .reflection h3 {
   margin-top: 0;
-  color: #aaaaff;
+  color: #d94a7b;
 }
 
 .reflection p {
   font-size: 0.95em;
-  color: #dddddd;
+  color: #f4e9f4;
 }
 
 /* =========================
@@ -154,7 +159,7 @@ body {
   height: 80px;
   width: 80px;
   border-radius: 10px;
-  border: 2px solid white;
+  border: 2px solid #ff66b2;
   object-fit: cover;
 }
 
@@ -164,7 +169,7 @@ body {
 footer {
   text-align: center;
   font-size: 0.85em;
-  color: #cccccc;
+  color: #f0dfe8;
 }
 
 /* =========================
