@@ -55,6 +55,8 @@ body {
   height: 40px;
   width: auto;
   border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
   transition: transform 0.3s ease;
 }
 
@@ -162,6 +164,7 @@ body {
   border-radius: 12px;
   border: 3px solid var(--purple-primary);
   object-fit: cover;
+  object-position: center top;
   box-shadow: 0 10px 40px rgba(124, 58, 237, 0.2);
   transition: transform 0.3s ease;
 }
@@ -222,6 +225,25 @@ body {
   border-color: rgba(124, 58, 237, 0.3);
 }
 
+.placeholder-iframe {
+  flex: 2;
+  min-width: 320px;
+  height: 400px;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 12px;
+  border: 2px dashed var(--purple-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.placeholder-iframe p {
+  color: var(--text-secondary);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 .reflection {
   flex: 1;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(220, 38, 38, 0.05));
@@ -257,8 +279,8 @@ body {
 ========================= */
 .new-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2.5em;
   margin-top: 1.5em;
 }
 
@@ -362,7 +384,8 @@ footer p {
     gap: 1.5em;
   }
 
-  .project iframe {
+  .project iframe,
+  .placeholder-iframe {
     width: 100%;
     min-width: 0;
     height: 350px;
