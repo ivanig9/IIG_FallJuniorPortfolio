@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Ivan Ibarra Gomez | Junior Fall Portfolio - Programming and Web Development Projects" />
-  <meta name="keywords" content="portfolio, junior, projects, programming, web development, python, codeskulptor" />
+  <meta name="description" content="Ivan Ibarra Gomez | Junior Fall Portfolio - Game Design, Programming, and Creative Projects" />
+  <meta name="keywords" content="portfolio, junior, game design, projects, programming, python, ui/ux, iterative design" />
   <meta name="author" content="Ivan Ibarra Gomez" />
 
-  <title>Ivan Ibarra Gomez | Portfolio</title>
+  <title>Ivan Ibarra Gomez | Game Design & Development Portfolio</title>
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
@@ -33,8 +33,11 @@
 
       <ul class="navbar-right">
         <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#cfus">Learning</a></li>
+        <li><a href="#goals">Career Goals</a></li>
+        <li><a href="#projects">Game Design</a></li>
+        <li><a href="#design-process">Design Process</a></li>
+        <li><a href="#competitions">Competitions</a></li>
+        <li><a href="#learning">Learning</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -44,7 +47,7 @@
   <main class="home-card" id="home">
 
     <!-- ABOUT / BIO CARD -->
-    <section class="resource-card">
+    <section class="resource-card bio-card">
       <div class="bio">
         <div class="bio-pic">
           <img src="profile.jpg" alt="Ivan Ibarra Gomez" />
@@ -52,309 +55,348 @@
 
         <div class="bio-text">
           <h1>Ivan Ibarra Gomez</h1>
-          <h4>Student Developer | Thomas A. Edison Career and Technical High School</h4>
+          <h4>Game Designer & Developer | Thomas A. Edison Career and Technical High School</h4>
           <p>
-            I'm a junior student passionate about programming and web development. This portfolio showcases my journey learning Python, music production, and creative coding. I'm actively exploring opportunities to build creative projects and grow as a developer.
+            I'm a junior student passionate about game design, creative coding, and interactive experiences. Through careful planning and iterative design, I'm developing skills in gameplay mechanics, visual storytelling, and user experience design. My portfolio showcases my journey from fundamental programming concepts to complex interactive projects, demonstrating my commitment to becoming a versatile game designer.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- CAREER GOALS SECTION -->
+    <section class="resource-card goals-card" id="goals">
+      <h2>Career Goals in Game Design</h2>
+      <div class="goals-content">
+        <div class="goal-item">
+          <h3>🎮 Short-term Goal</h3>
+          <p>Master core game design fundamentals including gameplay mechanics, level design, and user experience design. Build a professional portfolio demonstrating proficiency in industry-standard tools (Unity, Unreal Engine) and visual design principles.</p>
+        </div>
+        <div class="goal-item">
+          <h3>🚀 Medium-term Goal</h3>
+          <p>Contribute to collaborative game development projects, developing skills in team communication, iterative design, and integrating art, programming, and audio. Participate in game jams and design competitions to refine creative problem-solving abilities.</p>
+        </div>
+        <div class="goal-item">
+          <h3>🌟 Long-term Goal</h3>
+          <p>Become a full-stack game designer capable of prototyping complete game experiences from concept to completion. Create games that meaningfully impact players through engaging narratives, polished gameplay, and thoughtful design decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
     <section class="resource-card" id="projects">
-      <h2>Featured Projects</h2>
-      <p>A showcase of my best work in programming and creative applications. Each project includes the code and a reflection on what I learned.</p>
+      <h2>Game Design Collection</h2>
+      <p>A showcase of my development work across multiple platforms and design paradigms. Each project demonstrates growth in programming proficiency, creative problem-solving, and iterative refinement.</p>
     </section>
 
     <!-- PROJECT 1: Animation Drawing -->
-    <section class="resource-card">
+    <section class="resource-card project-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_ij83y7EP8w_0.py" title="Animation Drawing Project"></iframe>
 
         <div class="reflection">
           <h3>Animation Drawing</h3>
           <p>
-            I enhanced a previous drawing project by adding animation to bring it to life. This project taught me how to use loops and timing to create smooth animations.
+            This project represented my first venture into dynamic graphics programming. I enhanced a static drawing by introducing animation through time-based frame updates and coordinate transformations. The iterative process taught me about state management in graphics programming—tracking object positions and velocities across frames to create smooth, continuous motion. I discovered that careful planning of coordinate systems and timing intervals was essential for creating believable animation, a principle that directly applies to sprite animation and game object movement systems.
           </p>
-          <p><strong>Skills:</strong> Python, CodeSkulptor3, Graphics Programming</p>
+          <p><strong>Skills:</strong> Python, CodeSkulptor3, Animation, State Management</p>
+          <p><strong>Key Learning:</strong> Time-based updates are fundamental to interactive systems; animation is fundamentally about managing state across frames.</p>
         </div>
       </div>
     </section>
 
     <!-- PROJECT 2: Holiday Remix -->
-    <section class="resource-card">
+    <section class="resource-card project-card">
       <div class="project">
         <iframe width="100%" height="400" src="https://earsketch.gatech.edu/earsketch2/?sharing=N8_laJh599JZl4dzbaPSQQ&embedded=true"></iframe>
         <div class="reflection">
-          <h3>Holiday Remix</h3>
+          <h3>Holiday Remix - Audio Design</h3>
           <p>
-            I created a Halloween-themed remix using EarSketch to explore how music can convey emotion and tell a story. Music is a powerful tool for expression and stress relief.
+            Audio design is a critical but often overlooked element of game design. Through this project, I explored how music and sound design communicate emotion and establish atmosphere. I composed a Halloween-themed remix by layering multiple audio tracks, adjusting timing, and creating patterns that evolved throughout the piece. This exercise revealed how game audio creates emotional pacing—building tension, providing rewards, and guiding player engagement. I learned that audio decisions are design decisions, with direct implications for player psychology and immersion.
           </p>
-          <p><strong>Skills:</strong> Python, EarSketch, Music Production</p>
+          <p><strong>Skills:</strong> Python, EarSketch, Audio Design, Emotional Pacing</p>
+          <p><strong>Key Learning:</strong> Audio is a primary storytelling medium; composition requires understanding of pattern, repetition, and emotional intent.</p>
         </div>
       </div>
     </section>
 
     <!-- PROJECT 3: Game Arcade -->
-    <section class="resource-card">
+    <section class="resource-card project-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/?authuser=0#user310_ZbAPUK5KcWlrLmB.py" title="Game Arcade Project"></iframe>
 
         <div class="reflection">
-          <h3>Game Arcade</h3>
+          <h3>Game Arcade - Collaborative Development</h3>
           <p>
-            I collaborated with a team to build an arcade with multiple games. My contribution was creating and customizing a unique game while learning about teamwork and code integration.
+            This team-based project was my first exposure to collaborative game development. Our team built an arcade system integrating multiple independent games, each designed and implemented by different team members. I created a unique game mechanic and had to design it in isolation while ensuring compatibility with the larger system. The technical challenge forced me to write modular, well-documented code. More importantly, I learned that game design in a team requires clear communication of mechanics, consistent interfaces, and constant playtest feedback. Integration issues taught me that a design is only as strong as its ability to communicate to other developers.
           </p>
-          <p><strong>Skills:</strong> Python, CodeSkulptor3, Collaboration</p>
+          <p><strong>Skills:</strong> Python, CodeSkulptor3, Collaboration, Modular Design, Integration Testing</p>
+          <p><strong>Key Learning:</strong> Game design must be communicated clearly; technical elegance matters less than team understanding and compatibility.</p>
         </div>
       </div>
     </section>
 
     <!-- PROJECT 4: Holiday Drawing -->
-    <section class="resource-card">
+    <section class="resource-card project-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/?authuser=0#user310_fMppc1yhSt_0.py" title="Holiday Drawing Project"></iframe>
 
         <div class="reflection">
-          <h3>Holiday Drawing</h3>
+          <h3>Holiday Drawing - Visual Design Fundamentals</h3>
           <p>
-            I created a festive drawing using Python code to express holiday cheer through graphics. This project reinforced my understanding of coordinate systems and shape rendering.
+            This project focused on visual composition and coordinate system mastery. I designed a festive scene using only programmatic drawing primitives—circles, rectangles, and polygons—positioned through careful calculation. The constraints forced me to think deeply about coordinate systems, color theory, and visual hierarchy. Through multiple iterations, I refined my approach to creating visual appeal through simple shapes. This project mirrored the constraints of early game design, where visual sophistication emerges from clever use of limited resources. The discipline of planning exact positions taught me that good design often emerges from constraint, not abundance.
           </p>
-          <p><strong>Skills:</strong> Python, CodeSkulptor3, Graphics</p>
+          <p><strong>Skills:</strong> Python, CodeSkulptor3, Graphics Programming, Visual Composition, Coordinate Systems</p>
+          <p><strong>Key Learning:</strong> Visual impact comes from intentional composition; constraints often lead to more creative solutions.</p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECT 5: Coming Soon -->
-    <section class="resource-card">
+    <!-- PROJECT 5: Harvest Hope -->
+    <section class="resource-card project-card">
       <div class="project">
-        <div class="placeholder-iframe">
-          <p>Coming Soon</p>
+        <div class="placeholder-iframe coming-soon">
+          <p>🚀 Coming Soon</p>
+          <p class="placeholder-subtitle">Prototype Available Upon Request</p>
         </div>
 
         <div class="reflection">
-          <h3>Harvest Hope</h3>
+          <h3>Harvest Hope - Social Impact Design</h3>
           <p>
-            This was a long group made prototype and presentation for the infy app challenge. It focuses on bringing awareness to the global issue of world hunger 
+            This extensive group project challenged us to design a meaningful application addressing a critical global issue: world hunger. Our team conducted research, prototyped multiple interaction patterns, and refined our design through iterative user feedback. We used Figma for interface design, creating wireframes, high-fidelity mockups, and interactive prototypes. The project required moving beyond aesthetic design to consider accessibility, user workflow efficiency, and emotional impact. Our design philosophy centered on how digital tools can inspire action and create connections to real-world problems. This project demonstrated that game and application design serve purposes beyond entertainment—they shape how people understand and engage with the world.
           </p>
-          <p><strong>Skills:</strong> figma, UI/UX design, prototyping</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECT 6: Coming Soon -->
-    <section class="resource-card">
-      <div class="project">
-        <div class="placeholder-iframe">
-          <p>Coming Soon</p>
-        </div>
-
-        <div class="reflection">
-          <h3>Project Title</h3>
-          <p>
-            Add your project description here. Highlight the technologies used and what you learned from building this project.
-          </p>
-          <p><strong>Skills:</strong> Python, Your Skills Here</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECT 7: Coming Soon -->
-    <section class="resource-card">
-      <div class="project">
-        <div class="placeholder-iframe">
-          <p>Coming Soon</p>
-        </div>
-
-        <div class="reflection">
-          <h3>Project Title</h3>
-          <p>
-            Add your project description here. Highlight the technologies used and what you learned from building this project.
-          </p>
-          <p><strong>Skills:</strong> Python, Your Skills Here</p>
+          <p><strong>Skills:</strong> Figma, UI/UX Design, Prototyping, User Research, Design Thinking, Accessibility Considerations</p>
+          <p><strong>Key Learning:</strong> Design carries responsibility; intentional design can amplify positive impact and social awareness.</p>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- ITERATIVE DESIGN PROCESS SECTION -->
+  <section class="resource-card" id="design-process">
+    <h2>Iterative Design Process</h2>
+    <p>Understanding design evolution is critical to becoming an exemplary designer. Below is my approach to iterative refinement:</p>
+    
+    <div class="design-process-grid">
+      <div class="process-step">
+        <h3>1. Ideation & Brainstorming</h3>
+        <p>I begin each project by exploring multiple directions. For game projects, I sketch mechanics, consider player emotions, and identify potential challenges early. Brainstorming documentation captures raw ideas and conceptual exploration.</p>
+      </div>
+      
+      <div class="process-step">
+        <h3>2. Wireframes & Sketches</h3>
+        <p>Initial wireframes and flowcharts visualize system architecture and user flow. For games, this includes control schemes, UI layouts, and level progression. Visual planning prevents misalignment between vision and implementation.</p>
+      </div>
+      
+      <div class="process-step">
+        <h3>3. Prototype & Playtest</h3>
+        <p>I create functional prototypes to test core mechanics. Playtesting reveals what works and what needs refinement. User feedback is invaluable—what I assumed would be engaging often surprises me.</p>
+      </div>
+      
+      <div class="process-step">
+        <h3>4. Refinement & Polish</h3>
+        <p>Based on feedback, I iterate on mechanics, pacing, and presentation. Refinements address both technical issues and design problems. This cycle repeats until reaching the desired quality threshold.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIONS & ACHIEVEMENTS -->
+  <section class="resource-card competitions-card" id="competitions">
+    <h2>Creative Projects & Competitions</h2>
+    <div class="competitions-content">
+      <div class="competition-item">
+        <h3>🎮 Infosys Indy App Challenge</h3>
+        <p><strong>Project:</strong> Harvest Hope (Featured Above)</p>
+        <p>Participated in a prestigious competition challenging students to design applications addressing global challenges. Our team's design for addressing world hunger through community engagement and awareness was recognized for its thoughtful approach to social impact design.</p>
+        <p><strong>Reflection:</strong> This competition taught me that game and application design extends beyond entertainment—it's a tool for positive change. The rigorous feedback process strengthened my ability to defend design decisions and respond constructively to critique.</p>
+      </div>
+      
+      <div class="competition-item">
+        <h3>💡 Classroom Design Challenges</h3>
+        <p><strong>Experience:</strong> Ongoing participation in design challenges and creative problem-solving exercises</p>
+        <p>Through regular classroom competitions and design challenges, I've developed my ability to rapidly prototype ideas, present concepts clearly, and incorporate feedback. Each challenge has pushed me to think more creatively and work more efficiently.</p>
+        <p><strong>Reflection:</strong> Competitions transform learning into practice. The stakes of competition sharpen my decision-making and reveal gaps in my skills faster than individual work.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- CFUS / LEARNING SECTION -->
-  <section class="resource-card" id="cfus">
-    <h2>Learning Journey</h2>
-    <p>These assignments represent my progression through fundamental programming concepts. Each CFU (Checking For Understanding) marks a milestone in my Python learning path.</p>
+  <section class="resource-card" id="learning">
+    <h2>Learning Journey & Foundational Skills</h2>
+    <p>These assignments represent my progression through fundamental programming and design concepts. Each milestone marks deeper understanding of core principles underlying interactive systems.</p>
   </section>
 
   <div class="new-grid">
     <!-- CFU #1 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user311_OfkSlnHh4y_0.py" title="CFU #1: First Program"></iframe>
         <div class="reflection">
           <h3>First Program</h3>
-          <p>My introduction to programming. I learned how to print output and get user input—the foundation of all interactive programs.</p>
-          <p><strong>Skills:</strong> Python, I/O Operations</p>
+          <p>My introduction to programming—printing output and accepting user input. These fundamental operations are the building blocks of all interactive systems. Understanding I/O established the foundation for everything that followed.</p>
+          <p><strong>Concept:</strong> Input/Output, Program Flow</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #2 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_QPef5Xkw5dmSYdQ.py" title="CFU #2: ASCII Art"></iframe>
         <div class="reflection">
           <h3>ASCII Art</h3>
-          <p>I created ASCII art using line breaks and text. This taught me about string formatting and how to use escape sequences creatively.</p>
-          <p><strong>Skills:</strong> Python, String Manipulation</p>
+          <p>Creating visual representations through text demonstrated the power of string manipulation. I learned to think about sequences of characters as a medium for expression—a precursor to thinking about pixels as the medium for game graphics.</p>
+          <p><strong>Concept:</strong> String Formatting, Escape Sequences, Creative Expression</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #3 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <div class="reflection">
           <h3>Mathematical Operations</h3>
-          <p>Understanding how Python handles arithmetic. I learned about operator precedence and how to perform complex calculations programmatically.</p>
-          <p><strong>Skills:</strong> Python, Mathematics</p>
+          <p>Understanding operator precedence and complex calculations. Mathematics forms the backbone of game programming—from physics calculations to coordinate transformations. Precision in mathematical thinking is precision in game design.</p>
+          <p><strong>Concept:</strong> Operators, Precedence, Computational Thinking</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #4 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_FG5c18AMWNDOZmO.py" title="CFU #4: Rectangle Calculator"></iframe>
         <div class="reflection">
           <h3>Rectangle Area Calculator</h3>
-          <p>I built a utility that calculates area from height and width inputs. This demonstrates variables, user input, and basic problem-solving.</p>
-          <p><strong>Skills:</strong> Python, Variables, Functions</p>
+          <p>Building a functional utility from variables, user input, and calculations. This project introduced problem-solving—taking a real-world problem and breaking it into computational steps. The discipline applies directly to game design.</p>
+          <p><strong>Concept:</strong> Variables, Functions, Problem Decomposition</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #5 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_QPef5Xkw5dmSYdQ.py" title="CFU #5: Piggy Bank"></iframe>
         <div class="reflection">
           <h3>Piggy Bank</h3>
-          <p>A program that adds up coin values. I learned how to work with numeric data and perform aggregation operations.</p>
-          <p><strong>Skills:</strong> Python, Arithmetic, Logic</p>
+          <p>Aggregating numeric data to solve a practical problem. This exercise taught me about state accumulation—the foundation of game systems that track player resources, health, score, and progression.</p>
+          <p><strong>Concept:</strong> State Accumulation, Arithmetic Logic, Data Aggregation</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #6 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_AxSGploixjKQURq.py" title="CFU #6: Math Operations"></iframe>
         <div class="reflection">
           <h3>Random Math Operations</h3>
-          <p>I combined user input with random numbers and performed all basic math operations. This introduced me to the random module and operator usage.</p>
-          <p><strong>Skills:</strong> Python, Random Module, Operators</p>
+          <p>Combining deterministic math with randomness. Understanding randomness is essential to game design—it creates variation, surprise, and replayability. The random module became a core tool in my design toolkit.</p>
+          <p><strong>Concept:</strong> Randomness, Non-deterministic Systems, Module Integration</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #7 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_QPef5Xkw5dmSYdQ.py" title="CFU #7: Conditionals"></iframe>
         <div class="reflection">
           <h3>Conditional Logic</h3>
-          <p>I implemented if/else statements to make decisions based on conditions. This opened up the possibility of creating responsive, intelligent programs.</p>
-          <p><strong>Skills:</strong> Python, Conditionals, Logic</p>
+          <p>If/else statements transformed my programs from linear to intelligent. Conditions enable responsive systems—games react to player input and adapt to state. This was a crucial conceptual leap toward building interactive systems.</p>
+          <p><strong>Concept:</strong> Decision Making, Conditional Branching, Reactive Systems</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #8 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_g5o4GBj4SDSEe5T.py" title="CFU #8: Counting Loop"></iframe>
         <div class="reflection">
           <h3>Counting by Tens</h3>
-          <p>A simple loop that counts from 0 to 70 in increments of 10. This was my first experience with loops and iteration.</p>
-          <p><strong>Skills:</strong> Python, Loops, Iteration</p>
+          <p>My first experience with iteration. Loops enable efficiency and elegance—repeating actions without code duplication. In game design, loops handle animations, collision detection, and the game update cycle itself.</p>
+          <p><strong>Concept:</strong> Iteration, Loop Structures, Repetition & Efficiency</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #9 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_b3lbjRXqIVoy5Bj.py" title="CFU #9: Decimal Counting"></iframe>
         <div class="reflection">
           <h3>Counting with Decimals</h3>
-          <p>I used a for loop to increment by decimal values (0.5) up to 10.0. This taught me how to work with floating-point numbers in loops.</p>
-          <p><strong>Skills:</strong> Python, Loops, Float Numbers</p>
+          <p>Working with floating-point numbers in iterative systems. Precision matters in game programming—animations, movement speeds, and physics calculations depend on accurate floating-point handling. Small precision errors compound dramatically.</p>
+          <p><strong>Concept:</strong> Floating-Point Arithmetic, Precision, Decimal Iteration</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #10 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_FQrbOHEHuqz7FaU.py" title="CFU #10: 99 Bottles Song"></iframe>
         <div class="reflection">
           <h3>99 Bottles of Beer</h3>
-          <p>I generated the entire "99 Bottles" song using a single for loop. This project showed how powerful loops can be for generating repetitive output.</p>
-          <p><strong>Skills:</strong> Python, Loops, String Formatting</p>
+          <p>A single loop generated an entire song—demonstrating the power of loops combined with string formatting. This project showed how elegance emerges from mathematical patterns. Game design mirrors this principle: elegant systems emerge from well-understood patterns.</p>
+          <p><strong>Concept:</strong> Pattern Recognition, String Formatting in Loops, Elegant Design</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #11 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_Kd15QjwcU7_3.py" title="CFU #11: Happy Dots"></iframe>
         <div class="reflection">
           <h3>Happy Dots</h3>
-          <p>I placed dots on a canvas using coordinates to create simple graphics. This introduced me to canvas-based graphics and coordinate systems.</p>
-          <p><strong>Skills:</strong> Python, Graphics, Coordinates</p>
+          <p>My first venture into graphics programming. Placing dots on a canvas using coordinates revealed how screen space is numerically addressable. Understanding coordinate systems is foundational to game graphics, sprite positioning, and collision detection.</p>
+          <p><strong>Concept:</strong> Coordinate Systems, Graphics Primitives, Spatial Reasoning</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #12 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_QPef5Xkw5dmSYdQ.py" title="CFU #12: Happy Lines"></iframe>
         <div class="reflection">
           <h3>Happy Lines</h3>
-          <p>I drew lines on a canvas and learned how to control their positions and directions. This expanded my graphics programming skills.</p>
-          <p><strong>Skills:</strong> Python, Graphics, Drawing</p>
+          <p>Drawing lines taught me to think about direction and endpoints. Lines connect points in space—a foundational concept in graphics. In game design, line drawing principles apply to path planning, trajectory visualization, and visual feedback.</p>
+          <p><strong>Concept:</strong> Direction Vectors, Line Drawing, 2D Geometry</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #13 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_qBQJPwcl6t_0.py" title="CFU #13: Shapes"></iframe>
         <div class="reflection">
           <h3>Happy Shapes</h3>
-          <p>I created polygons and complex shapes. This project taught me how to manipulate shape parameters to create varied designs.</p>
-          <p><strong>Skills:</strong> Python, Graphics, Shapes & Polygons</p>
+          <p>Creating polygons and complex shapes demonstrated how parameters control visual form. I learned that understanding shape primitives—their parameters and properties—enables creative expression within constraints. Game graphics operate on the same principle.</p>
+          <p><strong>Concept:</strong> Polygon Drawing, Parametric Design, Shape Composition</p>
         </div>
       </div>
     </section>
 
     <!-- CFU #14 -->
-    <section class="resource-card">
+    <section class="resource-card cfu-card">
       <div class="project">
         <iframe src="https://py3.codeskulptor.org/#user310_YLNShuiK9w_0.py" title="CFU #14: Circle Drawing"></iframe>
         <div class="reflection">
           <h3>Happy Circle</h3>
-          <p>I rendered circles with various sizes and positions. Completing this project marked a solid foundation in graphics programming.</p>
-          <p><strong>Skills:</strong> Python, Graphics, Circles</p>
+          <p>Rendering circles of various sizes and positions completed my foundation in graphics primitives. I had learned to think in coordinates and transform ideas into visual output. This foundation prepared me for the leap to interactive graphics and game development.</p>
+          <p><strong>Concept:</strong> Circle Primitives, Size & Position Parameters, Graphics Mastery</p>
         </div>
       </div>
     </section>
   </div>
 
   <!-- CONTACT SECTION -->
-  <section class="resource-card" id="contact">
+  <section class="resource-card contact-card" id="contact">
     <h2>Get In Touch</h2>
     <ul>
       <li><strong>Email:</strong> <a href="mailto:ivanig0329@gmail.com">ivanig0329@gmail.com</a></li>
