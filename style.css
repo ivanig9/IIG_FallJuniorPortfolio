@@ -32,6 +32,8 @@ body {
   --text-primary: #f0f0f0;
   --text-secondary: #b0b0b0;
   --accent-gold: #fbbf24;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
 }
 
 /* =========================
@@ -70,6 +72,8 @@ body {
   gap: 2.5em;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar-right a {
@@ -150,6 +154,11 @@ body {
 /* =========================
    BIO SECTION
 ========================= */
+.bio-card {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(6, 182, 212, 0.08));
+  border: 2px solid rgba(124, 58, 237, 0.2);
+}
+
 .bio {
   display: flex;
   flex-direction: column;
@@ -200,12 +209,159 @@ body {
 }
 
 /* =========================
+   CAREER GOALS SECTION
+========================= */
+.goals-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(139, 92, 246, 0.08));
+  border: 2px solid rgba(16, 185, 129, 0.2);
+}
+
+.goals-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+.goal-item {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(124, 58, 237, 0.05));
+  padding: 1.5em;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-emerald);
+  transition: all 0.3s ease;
+}
+
+.goal-item:hover {
+  transform: translateX(8px);
+  border-left-color: var(--purple-primary);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.1);
+}
+
+.goal-item h3 {
+  margin: 0 0 0.75em 0;
+  color: var(--accent-emerald);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+.goal-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+
+/* =========================
+   DESIGN PROCESS SECTION
+========================= */
+.design-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.process-step {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(220, 38, 38, 0.05));
+  padding: 1.75em;
+  border-radius: 12px;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  counter-increment: process-counter;
+}
+
+.process-step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(180deg, var(--purple-primary), var(--red-primary));
+  transition: height 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.15);
+}
+
+.process-step:hover::before {
+  height: 100%;
+}
+
+.process-step h3 {
+  margin: 0 0 0.75em 0;
+  color: var(--purple-primary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15em;
+}
+
+.process-step p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* =========================
+   COMPETITIONS SECTION
+========================= */
+.competitions-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(124, 58, 237, 0.08));
+  border: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.competitions-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+.competition-item {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(124, 58, 237, 0.05));
+  padding: 1.75em;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.competition-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.15);
+}
+
+.competition-item h3 {
+  margin: 0 0 0.5em 0;
+  color: var(--accent-cyan);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+.competition-item p {
+  margin: 0.5em 0;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* =========================
    PROJECT LAYOUT
 ========================= */
 .project {
   display: flex;
   gap: 2em;
   align-items: flex-start;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(220, 38, 38, 0.08));
+  border: 1px solid rgba(124, 58, 237, 0.15);
 }
 
 .project iframe {
@@ -233,15 +389,30 @@ body {
   border-radius: 12px;
   border: 2px dashed var(--purple-primary);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+.placeholder-iframe.coming-soon {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(6, 182, 212, 0.05));
+  border-style: solid;
+  border-color: rgba(124, 58, 237, 0.3);
 }
 
 .placeholder-iframe p {
   color: var(--text-secondary);
   font-size: 1.2em;
   font-weight: 500;
+  margin: 0;
+}
+
+.placeholder-subtitle {
+  font-size: 0.85em !important;
+  color: var(--accent-gold) !important;
+  margin-top: 0.5em !important;
+  font-weight: 400 !important;
 }
 
 .reflection {
@@ -275,6 +446,19 @@ body {
 }
 
 /* =========================
+   CFU CARDS
+========================= */
+.cfu-card {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.06), rgba(6, 182, 212, 0.06));
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.cfu-card:hover {
+  border-color: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1);
+}
+
+/* =========================
    GRID LAYOUT FOR CFUS
 ========================= */
 .new-grid {
@@ -287,7 +471,7 @@ body {
 /* =========================
    CONTACT SECTION
 ========================= */
-#contact {
+.contact-card {
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(220, 38, 38, 0.1));
   border: 1px solid var(--card-border);
 }
@@ -390,6 +574,12 @@ footer p {
     min-width: 0;
     height: 350px;
   }
+
+  .goals-content,
+  .competitions-content,
+  .design-process-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -414,6 +604,11 @@ footer p {
 
   .resource-card {
     padding: 1.5em;
+  }
+
+  .goals-content,
+  .competitions-content {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -443,6 +638,16 @@ footer p {
   .reflection h3 {
     font-size: 1.1em;
   }
+
+  .design-process-grid,
+  .goals-content,
+  .competitions-content {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    flex-direction: column;
+  }
 }
 
 /* =========================
@@ -459,6 +664,38 @@ footer p {
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+  }
+}
+
 .resource-card {
   animation: fadeIn 0.6s ease-out;
+}
+
+.goal-item {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.goal-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.goal-item:nth-child(3) {
+  animation-delay: 0.2s;
 }
